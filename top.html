@@ -1,0 +1,170 @@
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Listas y Tops</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom right, #0f4d92, #5d8aa8, #7F9C96, #8FAD88, #E3F988);
+      color: #fff;
+      margin: 0;
+      padding: 40px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: #E3F988;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .top-peliculas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .pelicula {
+      background-color: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .pelicula img {
+      width: 50%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .categoria {
+      background-color: rgba(255,255,255,0.1);
+      margin-bottom: 20px;
+      border-radius: 10px;
+      padding: 15px;
+    }
+
+    .categoria h3 {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: #E3F988;
+      cursor: pointer;
+      margin: 0;
+    }
+
+    .lista {
+      display: none;
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    .lista li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h2>🎵 Mejores Soundtracks en el Cine</h2>
+
+  <section class="top-peliculas">
+    <div class="pelicula">
+      <img src="img/interstellar.jpg" alt="Interstellar">
+      <p>Interstellar</p>
+      <audio controls>
+        <source src="audios/interestellar.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+    </div>
+    <div class="pelicula">
+      <img src="img/lalaland.jpg" alt="La La Land">
+      <p>La La Land</p>
+      <audio controls>
+        <source src="audios/lalaland.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+    </div>
+    <div class="pelicula">
+      <img src="img/blad_runner.jpg" alt="Blade Runner 2049">
+      <p>Blade Runner 2049</p>
+      <audio controls>
+        <source src="audios/blade_runner.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+    </div>
+  </section>
+
+  <div class="categoria">
+    <h3 onclick="toggleLista(this)">🎬 Acción</h3>
+    <ul class="lista">
+      <li>Mad Max: Fury Road</li>
+      <li>John Wick</li>
+      <li>Inception</li>
+      <li>The Dark Knight</li>
+      <li>Gladiator</li>
+    </ul>
+  </div>
+
+  <div class="categoria">
+    <h3 onclick="toggleLista(this)">👻 Terror</h3>
+    <ul class="lista">
+      <li>Hereditary</li>
+      <li>El Conjuro</li>
+      <li>Psicosis</li>
+      <li>It Follows</li>
+      <li>Suspiria</li>
+    </ul>
+  </div>
+
+  <div class="categoria">
+    <h3 onclick="toggleLista(this)">💖 Amor</h3>
+    <ul class="lista">
+      <li>La La Land</li>
+      <li>Amélie</li>
+      <li>Call Me By Your Name</li>
+      <li>Romeo + Juliet</li>
+      <li>Her</li>
+    </ul>
+  </div>
+
+  <div class="categoria">
+    <h3 onclick="toggleLista(this)">🧚 Fantasía</h3>
+    <ul class="lista">
+      <li>El Señor de los Anillos</li>
+      <li>Harry Potter</li>
+      <li>El Viaje de Chihiro</li>
+      <li>Pan's Labyrinth</li>
+      <li>Avatar</li>
+    </ul>
+  </div>
+
+  <div class="categoria">
+    <h3 onclick="toggleLista(this)">🦸 Superhéroes</h3>
+    <ul class="lista">
+      <li>Avengers: Endgame</li>
+      <li>Spider-Man: Into the Spider-Verse</li>
+      <li>Black Panther</li>
+      <li>Man of Steel</li>
+      <li>Wonder Woman</li>
+    </ul>
+  </div>
+
+  <script>
+    function toggleLista(titulo) {
+      const lista = titulo.nextElementSibling;
+      lista.style.display = lista.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
+

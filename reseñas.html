@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reseñas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom right, #0f4d92, #5d8aa8, #7F9C96, #8FAD88, #E3F988);
+      color: #fff;
+      margin: 0;
+      padding: 40px;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: #E3F988;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .reseña {
+      background-color: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .reseña h3 {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: #8FAD88;
+      margin-top: 0;
+    }
+    .imagen {
+      max-width: 140px;
+      margin: 10px auto;
+      overflow: hidden;
+      border-radius: 4px;
+      box-shadow: 0 0 2px rgba(0,0,0,0.2);
+        
+
+
+    }
+    .imagen img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    .reseña p {
+      font-size: 0.95em;
+      color: #ffffff;
+    }
+    .btn-leer {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #E3F988;
+      color: #203a43;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn-leer:hover {
+      background-color: #cde86f;
+    }
+    .contenido {
+      display: none;
+      margin-top: 10px;
+      background-color: rgba(255,255,255,0.15);
+      padding: 15px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Reseñas Destacadas</h2>
+
+  <!-- Blade Runner 2049 -->
+  <div class="reseña">
+    <h3>Blade Runner 2049</h3>
+    <div class="imagen"><img src="img/blad_runner.jpg" alt="Blade Runner 2049"></div>
+    <p>Una atmósfera sonora futurista que redefine el género de ciencia ficción.</p>
+    <button class="btn-leer" onclick="toggleContenido(this)">Leer reseña</button>
+    <div class="contenido">
+      <p>La música de Hans Zimmer y Benjamin Wallfisch crea un paisaje sonoro oscuro, nostálgico y profundamente emocional...</p>
+    </div>
+  </div>
+
+  <!-- Interstellar -->
+  <div class="reseña">
+    <h3>Interstellar</h3>
+    <div class="imagen"><img src="img/interstellar.jpg" alt="Interstellar"></div>
+    <p>Hans Zimmer nos lleva al espacio con una partitura emocional y épica.</p>
+    <button class="btn-leer" onclick="toggleContenido(this)">Leer reseña</button>
+    <div class="contenido">
+      <p>El uso del órgano de iglesia y los crescendos dramáticos reflejan la inmensidad del universo y la fragilidad humana...</p>
+    </div>
+  </div>
+
+  <!-- La La Land -->
+  <div class="reseña">
+    <h3>La La Land</h3>
+    <div class="imagen"><img src="img/lalaland.jpg" alt="La La Land"></div>
+    <p>Un homenaje musical al cine clásico con una banda sonora inolvidable.</p>
+    <button class="btn-leer" onclick="toggleContenido(this)">Leer reseña</button>
+    <div class="contenido">
+      <p>Justin Hurwitz mezcla jazz, romance y melancolía en una partitura que celebra los sueños y las decisiones difíciles...</p>
+    </div>
+  </div>
+
+  <!-- El Viaje de Chihiro -->
+  <div class="reseña">
+    <h3>El Viaje de Chihiro</h3>
+    <div class="imagen"><img src="img/chihiro.jpg" alt="El Viaje de Chihiro"></div>
+    <p>Joe Hisaishi crea un mundo mágico con melodías que encantan el alma.</p>
+    <button class="btn-leer" onclick="toggleContenido(this)">Leer reseña</button>
+    <div class="contenido">
+      <p>La música acompaña la transformación de Chihiro con delicadeza y misterio...</p>
+    </div>
+  </div>
+
+  <!-- Amélie -->
+  <div class="reseña">
+    <h3>Amélie</h3>
+    <div class="imagen"><img src="img/amelie.jpg" alt="Amélie"></div>
+    <p>La música de Yann Tiersen convierte París en un cuento encantado.</p>
+    <button class="btn-leer" onclick="toggleContenido(this)">Leer reseña</button>
+    <div class="contenido">
+      <p>Con acordeones, pianos y melodías juguetonas, la banda sonora refleja la imaginación y ternura de Amélie...</p>
+    </div>
+  </div>
+
+  <!-- Gladiador -->
+  <div class="reseña">
+    <h3>Gladiador</h3>
+    <div class="imagen"><img src="img/gladiator.jpg" alt="Gladiador"></div>
+    <p>La épica de Roma se intensifica con la poderosa música de Hans Zimmer.</p>
+    <button class="btn-leer" onclick="toggleContenido(this)">Leer reseña</button>
+    <div class="contenido">
+      <p>La combinación de coros, percusión y cuerdas crea una atmósfera heroica y trágica...</p>
+    </div>
+  </div>
+
+  <!-- El Gran Hotel Budapest -->
+  <div class="reseña">
+    <h3>El Gran Hotel Budapest</h3>
+    <div class="imagen"><img src="img/budapest.jpg" alt="El Gran Hotel Budapest"></div>
+    <p>Alexandre Desplat mezcla humor y elegancia en una partitura única.</p>
+    <button class="btn-leer" onclick="toggleContenido(this)">Leer reseña</button>
+    <div class="contenido">
+      <p>La música acompaña el ritmo frenético y el estilo visual del film con precisión...</p>
+    </div>
+  </div>
+
+  <!-- Inception -->
+  <div class="reseña">
+    <h3>Inception</h3>
+    <div class="imagen"><img src="img/inception.jpg" alt="Inception"></div>
+    <p>Una banda sonora que juega con el tiempo y la mente del espectador.</p>
+    <button class="btn-leer" onclick="toggleContenido(this)">Leer reseña</button>
+    <div class="contenido">
+      <p>El famoso “BRAAAM” y los temas repetitivos reflejan la estructura de los sueños...</p>
+    </div>
+  </div>
+
+  <!-- El Señor de los Anillos -->
+  <div class="reseña">
+    <h3>El Señor de los Anillos</h3>
+    <div class="imagen"><img src="img/señor_delosaniños.jpg" alt="El Señor de los Anillos"></div>
+    <p>Howard Shore nos guía por la Tierra Media con una música legendaria.</p>
+    <button class="btn-leer" onclick="toggleContenido(this)">Leer reseña</button>
+    <div class="contenido">
+      <p>Cada región tiene su propio tema musical, desde los hobbits hasta Mordor...</p>
+    </div>
+  </div>
+
+  <!-- Her -->
+  <div class="reseña">
+    <h3>Her</h3>
+    <div class="imagen"><img src="img/her.jpg" alt="Her"></div>
+    <p>Una partitura íntima que acompaña la soledad y el amor digital.</p>
+    <button class="btn-leer" onclick="toggleContenido(this)">Leer reseña</button>
+    <div class="contenido">
+      <p>La música de Arcade Fire es suave, melancólica y profundamente humana...</p>
+    </div>
+  </div>
+
+   <script>
+    function toggleContenido(button) {
+      const contenido = button.nextElementSibling;
+      const isVisible = contenido.style.display === 'block';
+      contenido.style.display = isVisible ? 'none' : 'block';
+      button.textContent = isVisible ? 'Leer reseña' : 'Cerrar reseña';
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Películas & Soundtracks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom right, #0f4d92, #5d8aa8, #7F9C96, #8FAD88, #E3F988);
+      color: #fff;
+    }
+
+    header {
+      background-color: rgba(0,0,0,0.6);
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 2.8em;
+      color: #E3F988;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(255,255,255,0.1);
+      padding: 12px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #E3F988;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .galeria-item {
+      background-color: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 250px;
+    }
+
+    .galeria-item img {
+      width: 50%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .galeria-item p {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: #E3F988;
+      margin: 0;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0,0,0,0.6);
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PELÍCULAS & SOUNDTRACKS</h1>
+  </header>
+
+  <nav>
+    <a href="reseñas.html">RESEÑAS</a>
+    <a href="top.html">LISTA/TOP</a>
+    <a href="analisis.html">ANÁLISIS CULTURAL</a>
+    <a href="acerca.html">ACERCA DEL BLOG</a>
+    <a href="contacto.html">CONTACTO</a>
+  </nav>
+
+  <section class="galeria">
+    <div class="galeria-item">
+      <img src="img/lalaland.jpg" alt="La La Land">
+      <p>La La Land</p>
+    </div>
+    <div class="galeria-item">
+      <img src="img/blad_runner.jpg" alt="Blade Runner 2049">
+      <p>Blade Runner 2049</p>
+    </div>
+    <div class="galeria-item">
+      <img src="img/callbeyourname.jpg" alt="Call Me By Your Name">
+      <p>Call Me By Your Name</p>
+      <audio controls>
+        <source src="audios/callbe.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Películas & Soundtracks | Diseñado por Marisol y Ximena 🎧
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
